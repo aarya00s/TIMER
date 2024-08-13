@@ -1,0 +1,52 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><title>A long walk</title><meta name="author" content="aarya"><meta name="description" content="Web audio visualizer based on the Three.js library. And the source code is written in TypeScript"><meta name="keywords" content="WebGL, Three.js, TypeScript, Audio Visualizer, Web Audio API"><meta name="viewport" content="width=device-width,initial-scale=1"><style>* {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            width: 300px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+        }
+        .sidebar h2 {
+            margin-bottom: 20px;
+        }
+        .itinerary {
+            margin-bottom: 20px;
+        }
+        .itinerary div {
+            margin-bottom: 10px;
+        }
+        .done {
+            color: green;
+        }
+        .progress-bar-container {
+            margin-top: 20px;
+        }
+        .progress-bar {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress {
+            width: 0;
+            height: 20px;
+            background-color: #4caf50;
+        }
+        #infoPanel {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            border-radius: 5px;
+        }</style><script defer="defer" src="bundle.js"></script></head><body><div class="sidebar"><h2>Journey Itinerary</h2><div class="itinerary" id="itinerary"></div><div class="progress-bar-container"><div class="progress-bar"><div class="progress" id="progress"></div></div></div></div><div id="infoPanel"><div id="timeLeft"></div><div id="currentCountry"></div><div id="upcomingCountries"></div></div><script src="dist/main.js"></script></body></html>
